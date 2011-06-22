@@ -6,8 +6,8 @@ Takes advantage of Facebook Connect api to ease make use of it.
 How to use
 ----------
 	
-	First you need to follow Krpano instructions on how to include it on a site.
-	You can read about at http://www.krpano.com/docu/swfkrpanojs
+	First you need to follow Facebook instructions on how to include it on a site.
+	You can read about at http://developers.facebook.com/docs/
 	
 	As a simple example, you could use the following lines at Document Head:
 	
