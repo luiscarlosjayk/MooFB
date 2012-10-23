@@ -35,7 +35,7 @@ How to use
 	
 	You have to register a Facebook app at (you have to login to Facebook): http://www.facebook.com/developers/createapp.php
 	then use the Facebook app id to create an instance of MooFB this way:
-	var moofb = new MooFB(myFBAppId);
+	var moofb = new MooFB.Base(myFBAppId);
 	
 	My personal recommendation is that use automatic options, which are enabled by default.
 	Otherwise you would have to read how to include and load the Facebook api by yourself.
@@ -60,7 +60,7 @@ How to make api calls
 	
 	Or better make use of events for asynchronous calls:
 	
-	var moofb = new MooFB(myFBAppId).addEvents({
+	var moofb = new MooFB.Base(myFBAppId).addEvents({
 		login: function(response) {
 			console.log(response);
 		},
