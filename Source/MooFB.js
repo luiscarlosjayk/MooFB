@@ -187,7 +187,9 @@ provides: [MooFB]
 							$self.$subscribeFBEvents();
 							
 							// Notify when it has finalized initializing MooFB.Base class
-							$self.fireEvent('load');
+							$self.getLoginStatus(function(response) {
+								$self.fireEvent('load', response);
+							});
 						};
 					}
 					
